@@ -1,10 +1,10 @@
-export default function Square({ value }) {
-  function handleClick() {
-    console.log("clicked!");
-  }
+export default function Square({ value, onSquareClick }) {
   return (
     <>
-      <button onClick={handleClick} className="w-10 h-10 bg-blue-300">
+      <button
+        onClick={onSquareClick}
+        className="w-32 h-32 bg-[#1C140F] rounded-xl text-8xl font-bold text-white"
+      >
         {value}
       </button>
     </>
